@@ -1,0 +1,24 @@
+SchemaSupport
+=============
+
+Description
+===========
+
+pt_BR: Suporte a esquemas postgres para quem estiver jruby.
+en_US: Postgres schema support while using jruby.
+
+
+Example
+=======
+
+class xxx < ActiveRecord::Migration
+  set_schema_name :schema_name
+end
+
+class yyy < ActiveRecord::Base
+  acts_as_schema_support
+  set_schema_name :schema_name
+end
+
+
+Copyright (c) 2009 Nabucodonosor Coutinho, released under the MIT license
